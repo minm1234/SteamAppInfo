@@ -72,7 +72,7 @@ This field contains the SHA-1 hash of the binary VDF data that follows immediate
 
 | Type   | Size | Version | Field Name | Description |
 |--------|------|---------|------------|-------------|
-| uint4  | 4    |         | Magic      | Version identifier (see Version History) |
+| uint32 | 4    |         | Magic      | Version identifier (see Version History) |
 | uint32 | 4    |         | Universe   | Steam universe (always 1) |
 
 ### Package Entry (Repeated)
@@ -91,5 +91,5 @@ Repeated read until the first uint32 (Package ID) is `0xFFFFFFFF` (which is the 
 
 | Version | Magic Number | Start Date      | Description |
 |---------|--------------|-----------------|-------------|
-| 39      | `0x06555627` | Before Apr 2020 | Basic format |
-| 40      | `0x06555628` | Apr 2020        | Added PICS Token field |
+| 39      | `0x06565527` | Before Apr 2020 | Basic format |
+| 40      | `0x06565528` | Apr 2020        | Added PICS Token field |
